@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="520.0" prefWidth="430.0" style="-fx-background-color: #F5F7FA;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="520.0" prefWidth="430.0" style="-fx-background-color: #F5F7FA;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardContoller">
 
      <!-- White card -->
      <VBox alignment="TOP_CENTER" prefHeight="520.0" prefWidth="430" spacing="25" style="-fx-background-color: white;                      -fx-background-radius: 12;                      -fx-border-radius: 12;">
@@ -61,7 +61,7 @@
          <VBox alignment="CENTER" spacing="6">
 
              <!-- Login Button -->
-             <Button contentDisplay="CENTER" prefHeight="42" prefWidth="260" style="-fx-background-color: #2F6BFF;                                -fx-text-fill: white;                                -fx-font-size: 14px;                                -fx-background-radius: 8;" text="Login" />
+             <Button contentDisplay="CENTER" onAction="#toDashboard" prefHeight="42" prefWidth="260" style="-fx-background-color: #2F6BFF;                                -fx-text-fill: white;                                -fx-font-size: 14px;                                -fx-background-radius: 8;" text="Login" />
              <Hyperlink style="-fx-font-size: 12px;" text="Forgot Password?" />
              <Label style="-fx-font-size: 11px; -fx-text-fill: #999;" text="Powered by Book Rental POS System" />
          </VBox>

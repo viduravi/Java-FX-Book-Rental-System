@@ -10,7 +10,7 @@ public class Starter extends Application {
     @Override
     public void start(Stage stage){
         try {
-            stage.setScene(new Scene(FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/ui/login_page.fxml")))));
+            stage.setScene(new Scene(FXMLLoader.load((getClass().getResource("/ui/login_page.fxml")))));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
