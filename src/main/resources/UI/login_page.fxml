@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="520.0" prefWidth="430.0" style="-fx-background-color: #F5F7FA;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardContoller">
+
+    <!-- White card -->
+    <VBox alignment="TOP_CENTER" prefHeight="520.0" prefWidth="430" spacing="25" style="-fx-background-color: white;                      -fx-background-radius: 12;                      -fx-border-radius: 12;">
+        <padding>
+            <Insets bottom="35" left="40" right="40" top="35" />
+        </padding>
+
+        <!-- Title -->
+        <VBox alignment="CENTER" spacing="4">
+            <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Book Rental POS" />
+            <Label style="-fx-font-size: 12px; -fx-text-fill: #666;" text="Secure Login for Admin Staff" />
+        </VBox>
+
+        <!-- FORM -->
+        <VBox alignment="CENTER_LEFT" prefWidth="350" spacing="18">
+
+            <!-- Email -->
+            <VBox spacing="6">
+                <Label style="-fx-font-size: 12px;" text="Email" />
+                <TextField fx:id="emailField" prefHeight="38" style="-fx-background-color: #F2F4F7;                                       -fx-background-radius: 6;                                       -fx-border-radius: 6;" />
+            </VBox>
+
+            <!-- Password -->
+            <VBox spacing="6">
+                <Label style="-fx-font-size: 12px;" text="Password" />
+                <PasswordField fx:id="passwordField" prefHeight="38" style="-fx-background-color: #F2F4F7;                                           -fx-background-radius: 6;                                           -fx-border-radius: 6;" />
+            </VBox>
+
+            <!-- Login As -->
+            <VBox spacing="6">
+                <Label style="-fx-font-size: 12px;" text="Login As" />
+                <HBox spacing="10">
+                    <ToggleButton fx:id="adminButton" prefHeight="36" prefWidth="120" selected="true" style="-fx-background-color: #E8F0FF;                                              -fx-background-radius: 6;                                              -fx-text-fill: #2F6BFF;                                              -fx-font-weight: bold;" text="Admin" />
+                    <ToggleButton fx:id="staffButton" prefHeight="36" prefWidth="120" style="-fx-background-color: #F2F4F7;                                              -fx-background-radius: 6;" text="Staff" />
+                </HBox>
+            </VBox>
+
+            <!-- Remember Me -->
+            <HBox alignment="CENTER_LEFT" spacing="8">
+                <CheckBox fx:id="rememberMeCheckBox" />
+                <Label style="-fx-font-size: 12px;" text="Remember Me" />
+            </HBox>
+        </VBox>
+
+        <!-- Forgot / Footer -->
+        <VBox alignment="CENTER" spacing="6">
+
+            <!-- Login Button -->
+            <Button contentDisplay="CENTER" onAction="#toDashboard" prefHeight="42" prefWidth="260" style="-fx-background-color: #2F6BFF;                                -fx-text-fill: white;                                -fx-font-size: 14px;                                -fx-background-radius: 8;" text="Login" />
+            <Hyperlink style="-fx-font-size: 12px;" text="Forgot Password?" />
+            <Label style="-fx-font-size: 11px; -fx-text-fill: #999;" text="Powered by Book Rental POS System" />
+        </VBox>
+
+    </VBox>
+
+</AnchorPane>
